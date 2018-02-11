@@ -14,10 +14,6 @@ module.exports = {
     app: [
       './client/index.js',
     ],
-    vendor: [
-      'react',
-      'react-dom',
-    ]
   },
 
   output: {
@@ -66,7 +62,7 @@ module.exports = {
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      minChunks: Infinity,
+      minChunks: 2,
       filename: 'vendor.js',
     }),
     new ExtractTextPlugin('app.[chunkhash].css', { allChunks: true }),

@@ -11,6 +11,9 @@ export default {
     authorName: 'Nom de l\'auteur',
     postTitle: 'Titre de l\'article',
     postContent: 'Contenu après',
+    productName: 'Le nom',
+    addedDate: 'Date ajoutée',
+    products: 'Des produits',
     submit: 'Soumettre',
     comment: `user {name} {value, plural,
     	  =0 {does not have any comments}
